@@ -44,6 +44,16 @@ def part_2(): # CHECK EACH PARTS VALIDDITY ONE BY ONE
     val_d_4 = False
     val_d_5 = False
 
+
+    count = 0
+    for i in set_7:
+        if i == "@":
+            count += 1
+
+        else:
+            continue
+
+
     if set_1.lower() == "www":
         val_d_1 = True
 
@@ -56,7 +66,7 @@ def part_2(): # CHECK EACH PARTS VALIDDITY ONE BY ONE
                 if set_4.lower() == ".":
                     val_d_4 = True
 
-                    if set_5.lower() == "@gmail":
+                    if set_5.lower() == "@gmail" and count == 1 :
                         val_d_5 = True
 
 def part_3(): # DISPLAY EACH PARTS & VALIDDITY
